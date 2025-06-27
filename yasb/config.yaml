@@ -46,16 +46,7 @@ bars:
           "active_window",
         ]
       center: ["clock", "apps"]
-      right:
-        [
-          "traffic",
-          "memory",
-          "media",
-          "weather",
-          "volume",
-          "notifications",
-          "language",
-        ]
+      right: ["traffic", "memory", "media", "volume", "language"]
 widgets:
   traffic:
     type: "yasb.traffic.TrafficWidget"
