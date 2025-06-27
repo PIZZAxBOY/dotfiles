@@ -1,3 +1,0 @@
-return {
-  "amadeus/vim-mjml",
-}
