@@ -41,14 +41,14 @@ return {
     "L3MON4D3/LuaSnip",
     config = function(plugin, opts)
       -- 包含Astronvim的默认配置
-      require "astronvim.plugins.configs.luasnip"(plugin, opts)
+      require("astronvim.plugins.configs.luasnip")(plugin, opts)
 
       -- 添加文件类型扩展
-      local luasnip = require "luasnip"
+      local luasnip = require("luasnip")
       luasnip.filetype_extend("javascript", { "javascriptreact" })
 
       -- 加载自定义代码片段
-      local path = vim.fs.joinpath(vim.fn.stdpath "config", "lua", "snippets", "mjml.lua")
+      local path = vim.fs.joinpath(vim.fn.stdpath("config"), "lua", "snippets", "mjml.lua")
       if vim.fn.filereadable(path) == 1 then
         dofile(path)
       else
@@ -60,26 +60,26 @@ return {
   {
     "windwp/nvim-autopairs",
     config = function(plugin, opts)
-      require "astronvim.plugins.configs.nvim-autopairs"(plugin, opts) -- include the default astronvim config that calls the setup call
+      require("astronvim.plugins.configs.nvim-autopairs")(plugin, opts) -- include the default astronvim config that calls the setup call
       -- add more custom autopairs configuration such as custom rules
-      local npairs = require "nvim-autopairs"
-      local Rule = require "nvim-autopairs.rule"
-      local cond = require "nvim-autopairs.conds"
+      local npairs = require("nvim-autopairs")
+      local Rule = require("nvim-autopairs.rule")
+      local cond = require("nvim-autopairs.conds")
       npairs.add_rules(
         {
           Rule("$", "$", { "tex", "latex" })
-            -- don't add a pair if the next character is %
-            :with_pair(cond.not_after_regex "%%")
-            -- don't add a pair if  the previous character is xxx
-            :with_pair(
-              cond.not_before_regex("xxx", 3)
-            )
-            -- don't move right when repeat character
-            :with_move(cond.none())
-            -- don't delete if the next character is xx
-            :with_del(cond.not_after_regex "xx")
-            -- disable adding a newline when you press <cr>
-            :with_cr(cond.none()),
+          -- don't add a pair if the next character is %
+              :with_pair(cond.not_after_regex("%%"))
+          -- don't add a pair if  the previous character is xxx
+              :with_pair(
+                cond.not_before_regex("xxx", 3)
+              )
+          -- don't move right when repeat character
+              :with_move(cond.none())
+          -- don't delete if the next character is xx
+              :with_del(cond.not_after_regex("xx"))
+          -- disable adding a newline when you press <cr>
+              :with_cr(cond.none()),
         },
         -- disable for .vim files, but it work for another filetypes
         Rule("a", "a", "-vim")
@@ -91,9 +91,15 @@ return {
   {
     "akinsho/toggleterm.nvim",
     config = function()
-      require("toggleterm").setup {
-        shell = "pwsh",
-      }
+      require("toggleterm").setup({
+        -- 使用 Lua 的方式设置 shell
+        shell = vim.fn.has("win32") == 1 and "pwsh.exe" or "/bin/zsh",
+        -- 其他配置...
+        direction = "float",
+        float_opts = {
+          border = "curved",
+        },
+      })
     end,
   },
 
@@ -104,7 +110,9 @@ return {
   {
     "PIZZAxBOY/mjml-preview.nvim",
     ft = { "mjml" },
-    build = function() vim.fn.system "cd app && npm install" end,
+    build = function()
+      vim.fn.system("cd app && npm install")
+    end,
   },
 
   -- 打字练习插件
@@ -123,17 +131,19 @@ return {
     ---@type render.md.UserConfig
     opts = {},
     config = function()
-      require("render-markdown").setup {
+      require("render-markdown").setup({
         completions = { lsp = { enabled = true } },
         heading = {
           backgrounds = {},
         },
         sign = { enabled = false },
-      }
+      })
     end,
   },
   {
     "sainnhe/everforest",
-    config = function() vim.g.everforest_background = "hard" end,
+    config = function()
+      vim.g.everforest_background = "hard"
+    end,
   },
 }

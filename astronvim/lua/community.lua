@@ -14,7 +14,6 @@ return {
   { import = "astrocommunity.recipes.neovide" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.html-css" },
 }
