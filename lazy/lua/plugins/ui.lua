@@ -43,7 +43,6 @@ return {
       },
 		},
 		    config = function(_, opts)
-      local mocha = require("catppuccin.palettes").get_palette("mocha")
 			local frappe = require("catppuccin.palettes").get_palette("frappe")
 
       local function show_macro_recording()
@@ -101,7 +100,6 @@ return {
     keys = {
       { "<[-b>", "<CMD>BufferPrevious<CR>",     mode = {"n"}, desc = "[Buffer] Previous buffer"   },
       { "<]-b>", "<CMD>BufferNext<CR>",         mode = {"n"}, desc = "[Buffer] Next buffer"       },
-			{ "<Leader>-c", "<CMD>BufferClose<CR>",   mode = {"n"}, desc = "[Buffer] Close buffer"      },
     },
     opts = {
       animation = true,
@@ -181,6 +179,34 @@ return {
         -- Hide written message
         { filter = { event = "msg_show", kind = "" }, opts = { skip = true } },
       },
+    },
+  },
+	  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    opts = {
+      ---@type false | "classic" | "modern" | "helix"
+      preset = "helix",
+      win = {
+        -- no_overlap = true,
+        title = false,
+        width = 0.5,
+      },
+      -- stylua: ignore
+      spec = {
+        { "<leader>cc", group = "<CodeCompanion>", icon = "" },
+        { "<leader>s",  group = "<Snacks>"                    },
+        { "<leader>t",  group = "<Snacks> Toggle"             },
+      },
+      -- expand all nodes wighout a description
+      expand = function(node)
+        return not node.desc
+      end,
+    },
+    keys = {
+      -- stylua: ignore
+      { "<leader>?", function() require("which-key").show({ global = false }) end, desc = "[Which-key] Buffer Local Keymaps", },
     },
   },
 }

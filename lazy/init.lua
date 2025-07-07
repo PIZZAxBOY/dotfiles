@@ -1,7 +1,7 @@
 vim.wo.cursorline = true
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.wrap = false
+vim.wo.wrap = false
 -- Display tabs and trailing spaces
 vim.opt.list = true
 vim.opt.listchars = { tab = ">-", trail = "-"}
