@@ -1,0 +1,5 @@
+[mgr]
+show_hidden = true
+prepend_keymap = [
+  { on = ["g", "a"], run = "cd C:/Users/Administrator/AppData/", desc = "Go AppData" }
+]

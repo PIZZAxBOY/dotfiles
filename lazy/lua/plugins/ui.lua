@@ -20,33 +20,25 @@ return {
 		opts = {
 			options = {
 				theme = "catppuccin",
-				always_divide_middle = false,
-				component_separators = { left = "", right = "" },
-				section_separators = { left = "", right = "" },
+				-- always_divide_middle = false,
+				-- component_separators = { left = "", right = "" },
+				-- section_separators = { left = "", right = "" },
 			},
 			sections = {
 				lualine_a = { "mode" },
 				lualine_b = { "branch", "diff", "diagnostics" },
 				lualine_c = { "filename" },
-				lualine_x = {},
+				lualine_x = { "lsp_status" },
 				lualine_y = { "encoding", "fileformat", "filetype", "progress" },
 				lualine_z = { "location" },
 			},
-			winbar = {
-				lualine_a = { "filename" },
-				lualine_b = { {
-					function()
-						return " "
-					end,
-					color = "Comment",
-				} },
-				lualine_x = { "lsp_status" },
-			},
-			inactive_winbar = {
-        -- Always show winbar
-        -- stylua: ignore
-        lualine_b = { function() return " " end, },
-			},
+			-- winbar = {
+			-- },
+			-- inactive_winbar = {
+			--      -- Always show winbar
+			--      -- stylua: ignore
+			--      lualine_b = { function() return " " end, },
+			-- },
 		},
 		config = function(_, opts)
 			local frappe = require("catppuccin.palettes").get_palette("frappe")
@@ -108,7 +100,7 @@ return {
       { "<]-b>", "<CMD>BufferNext<CR>",         mode = {"n"}, desc = "[Buffer] Next buffer"       },
     },
 		opts = {
-			animation = true,
+			-- animation = true,
 			-- Automatically hide the tabline when there are this many buffers left.
 			-- Set to any value >=0 to enable.
 			auto_hide = 1,
@@ -129,7 +121,25 @@ return {
 		keys = {
 			{ "<leader>e", "<CMD>NvimTreeToggle<CR>", mode = { "n" }, desc = "[NvimTree] Toggle NvimTree" },
 		},
-		opts = {},
+		opts = {
+			update_focused_file = {
+				enable = true, -- 启用自动聚焦当前文件
+				update_root = true, -- 同时更新根目录（如果当前文件在子目录中）
+				update_cwd = true, -- 更新工作目录
+			},
+			view = {
+				adaptive_size = true, -- 窗口自适应大小
+			},
+			-- 其他可选配置...
+			renderer = {
+				highlight_git = true, -- 高亮git状态
+				icons = {
+					show = {
+						git = true, -- 显示git图标
+					},
+				},
+			},
+		},
 	},
 
 	-- 不同括号的颜色区分
@@ -164,7 +174,6 @@ return {
 				enabled = false,
 			},
 			lsp = {
-
 				-- override markdown rendering so that **cmp** and other plugins use **Treesitter**
 				override = {
 					["vim.lsp.util.convert_input_to_markdown_lines"] = false,
@@ -201,7 +210,6 @@ return {
 			},
       -- stylua: ignore
       spec = {
-        { "<leader>cc", group = "<CodeCompanion>", icon = "" },
         { "<leader>s",  group = "<Snacks>"                    },
         { "<leader>t",  group = "<Snacks> Toggle"             },
       },

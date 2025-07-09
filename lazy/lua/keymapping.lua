@@ -1,4 +1,4 @@
-vim.keymap.set("n", "A-z", "<CMD>set wrap!<CR>", { desc = "Toggle line wrap" })
+vim.keymap.set("n", "<A-z>", "<CMD>set wrap!<CR>", { desc = "Toggle line wrap" })
 
 -- 窗口移动快捷键
 vim.keymap.set("n", "<C-h>", "<C-w>h")
