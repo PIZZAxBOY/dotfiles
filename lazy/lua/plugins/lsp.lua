@@ -37,7 +37,7 @@ return {
 			vim.diagnostic.config({
 				underline = false,
 				signs = false,
-				update_in_insert = false,
+				update_in_insert = true,
 				virtual_text = { spacing = 2, prefix = "●" },
 				severity_sort = true,
 				float = {
@@ -45,12 +45,9 @@ return {
 				},
 			})
 
-			local capabilities = require("blink.cmp").get_lsp_capabilities()
-			local lspconfig = require("lspconfig")
-
-			lspconfig["lua_ls"].setup({ capabilities = capabilities })
-			lspconfig["marksman"].setup({ capabilities = capabilities })
-			lspconfig["ts_ls"].setup({ capabilities = capabilities })
+			vim.lsp.enable("marksman")
+			vim.lsp.enable("ts_ls")
+			vim.lsp.enable("lua_ls")
 			-- Use LspAttach autocommand to only map the following keys
 			-- after the language server attaches to the current buffer
 			vim.api.nvim_create_autocmd("LspAttach", {
