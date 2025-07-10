@@ -21,6 +21,9 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- 加载 options.lua
+require("config.options")
+
 -- Setup lazy.nvim
 require("lazy").setup({
 	spec = {
@@ -29,12 +32,10 @@ require("lazy").setup({
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
-	install = { colorscheme = { "catpuccin" } },
+	install = { colorscheme = { "kanagawa" } },
 	-- automatically check for plugin updates
 	checker = { enabled = true },
-	ui = {
-		border = "rounded",
-	},
 })
 
-vim.keymap.set("n", "<Leader>L", "<CMD>Lazy<CR>", { desc = "[Lazy] Open Lazy.nvim" })
+-- 加载键位设置
+require("config.keymaps")
