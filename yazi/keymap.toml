@@ -1,5 +1,5 @@
 [mgr]
-show_hidden = true
 prepend_keymap = [
-  { on = ["g", "a"], run = "cd C:/Users/Administrator/AppData/", desc = "Go AppData" }
+  { on = ["g", "a"], run = "cd C:/Users/Administrator/AppData/", desc = "Go AppData" },
+  { on = ["g", "n"], run = "cd C:/Users/Administrator/AppData/Local/nvim/", desc = "Go Neovim config" }
 ]
