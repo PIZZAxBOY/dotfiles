@@ -4,7 +4,7 @@ local wezterm = require("wezterm")
 local module = {}
 
 function module.apply_to_config(config)
-	config.color_scheme = "Kanagawa (Gogh)"
+	config.color_scheme = "Gruvbox Dark (Gogh)"
 
 	-- 字体设置
 	--
@@ -13,10 +13,10 @@ function module.apply_to_config(config)
 	config.font_rules = {
 		{
 			intensity = "Half",
-			font = wezterm.font_with_fallback {
+			font = wezterm.font_with_fallback({
 				{ family = "CaskaydiaCove NF", italic = true },
 				{ family = "Maple Mono NF CN", italic = true },
-			},
+			}),
 		},
 	}
 
@@ -95,7 +95,13 @@ function module.apply_to_config(config)
 		local SOLID_LEFT_ARROW = utf8.char(0xe0b2)
 
 		-- Color palette for the backgrounds of each cell
-		local colors = { "#3c1361", "#52307c", "#663a82", "#7c5295", "#b491c8" }
+		local colors = {
+			"#223249", -- waveBlue1 (深背景)
+			"#3d4c5f", -- sumiInk4（次一级背景）
+			"#5e5c64", -- fujiGray（中性灰）
+			"#7e9cd8", -- lightBlue（主色调，柔和的蓝）
+			"#957fb8", -- springBlue（带紫的柔和色）
+		}
 
 		-- Foreground color for the text across the fade
 		local text_fg = "#c0c0c0"
