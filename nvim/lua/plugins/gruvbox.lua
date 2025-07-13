@@ -2,5 +2,10 @@ return {
   "ellisonleao/gruvbox.nvim",
   priority = 1000,
   opts = {},
-  config = function() vim.cmd "colorscheme gruvbox" end,
+  config = function()
+    require("gruvbox").setup {
+      transparent_mode = true,
+    }
+    vim.cmd "colorscheme gruvbox"
+  end,
 }
