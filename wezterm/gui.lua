@@ -4,10 +4,9 @@ local wezterm = require("wezterm")
 local module = {}
 
 function module.apply_to_config(config)
-	config.color_scheme = "Gruvbox Dark (Gogh)"
+	config.color_scheme = "Gruvbox dark, soft (base16)"
 
 	-- 字体设置
-	--
 	config.font = wezterm.font_with_fallback({ "CaskaydiaCove NF", "Maple Mono NF CN" })
 
 	config.font_rules = {
@@ -20,7 +19,8 @@ function module.apply_to_config(config)
 		},
 	}
 
-	config.font_size = 12.5
+	config.font_size = 11
+	config.animation_fps = 60
 
 	config.default_prog = { "pwsh", "-NoLogo" }
 	config.initial_cols = 120
@@ -28,10 +28,25 @@ function module.apply_to_config(config)
 	config.window_decorations = "RESIZE"
 	config.use_fancy_tab_bar = false
 	config.show_new_tab_button_in_tab_bar = false
-	-- config.window_background_opacity = 0.5
+	-- config.window_background_opacity = 0.9
+	config.tab_max_width = 20
 	config.colors = {
 		tab_bar = {
-			background = "none",
+			background = "#282828",
+			active_tab = {
+				bg_color = "#d65d0e",
+				fg_color = "#ebdbb2",
+			},
+
+			inactive_tab = {
+				bg_color = "#504945",
+				fg_color = "#ebdbb2",
+			},
+
+			inactive_tab_hover = {
+				bg_color = "#7c6f64",
+				fg_color = "#ebdbb2",
+			},
 		},
 	}
 
@@ -44,7 +59,6 @@ function module.apply_to_config(config)
 		-- shell is using OSC 7 on the remote host.
 		local cwd_uri = pane:get_current_working_dir()
 		if cwd_uri then
-			local cwd = ""
 			local hostname = ""
 
 			if type(cwd_uri) == "userdata" then
@@ -61,9 +75,9 @@ function module.apply_to_config(config)
 				if slash then
 					hostname = cwd_uri:sub(1, slash - 1)
 					-- and extract the cwd from the uri, decoding %-encoding
-					cwd = cwd_uri:sub(slash):gsub("%%(%x%x)", function(hex)
-						return string.char(tonumber(hex, 16))
-					end)
+					-- cwd = cwd_uri:sub(slash):gsub("%%(%x%x)", function(hex)
+					-- 	return string.char(tonumber(hex, 16))
+					-- end)
 				end
 			end
 
@@ -76,7 +90,6 @@ function module.apply_to_config(config)
 				hostname = wezterm.hostname()
 			end
 
-			table.insert(cells, cwd)
 			table.insert(cells, hostname)
 		end
 
@@ -96,15 +109,15 @@ function module.apply_to_config(config)
 
 		-- Color palette for the backgrounds of each cell
 		local colors = {
-			"#223249", -- waveBlue1 (深背景)
-			"#3d4c5f", -- sumiInk4（次一级背景）
-			"#5e5c64", -- fujiGray（中性灰）
+			"#d79921", -- waveBlue1 (深背景)
+			"#665c54", -- sumiInk4（次一级背景）
+			"#ebdbb2", -- fujiGray（中性灰）
 			"#7e9cd8", -- lightBlue（主色调，柔和的蓝）
 			"#957fb8", -- springBlue（带紫的柔和色）
 		}
 
 		-- Foreground color for the text across the fade
-		local text_fg = "#c0c0c0"
+		local text_fg = "#ebdbb2"
 
 		-- The elements to be formatted
 		local elements = {}
