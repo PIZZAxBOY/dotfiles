@@ -20,12 +20,6 @@
           "type": "os"
         },
         {
-          "foreground": "p:blue",
-          "style": "plain",
-          "template": "@{{ .HostName }} ",
-          "type": "session"
-        },
-        {
           "foreground": "p:purple",
           "properties": {
             "folder_icon": "..\ue5fe..",
@@ -33,7 +27,7 @@
             "style": "agnoster_short"
           },
           "style": "plain",
-          "template": "{{ .Path }} ",
+          "template": " {{ .Path }} ",
           "type": "path"
         },
         {
