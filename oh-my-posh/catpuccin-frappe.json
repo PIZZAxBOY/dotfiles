@@ -1,12 +1,13 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "palette": {
-    "os": "#5ea0f7",
+    "os": "#8ec07c",
     "closer": "p:os",
-    "pink": "#F4B8E4",
+    "purple": "#d3869b",
     "lavender": "#BABBF1",
-    "blue": "#8CAAEE",
-    "teal": "#81c8be"
+    "blue": "#83a598",
+    "teal": "#81c8be",
+    "green": "#b8bb26"
   },
   "blocks": [
     {
@@ -19,13 +20,13 @@
           "type": "os"
         },
         {
-          "foreground": "p:teal",
+          "foreground": "p:blue",
           "style": "plain",
           "template": "{{ .UserName }}@{{ .HostName }} ",
           "type": "session"
         },
         {
-          "foreground": "p:pink",
+          "foreground": "p:purple",
           "properties": {
             "folder_icon": "..\ue5fe..",
             "home_icon": "~",
