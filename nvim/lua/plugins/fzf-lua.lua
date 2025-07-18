@@ -3,7 +3,7 @@ return {
   -- optional for icon support
   dependencies = { "nvim-tree/nvim-web-devicons" },
   -- or if using mini.icons/mini.nvim
-  tag = "0.7",
+  -- tag = "0.7",
   opts = {},
   -- 加载插件时，自动注册 vim.ui.select
   config = function() require("fzf-lua").register_ui_select() end,
