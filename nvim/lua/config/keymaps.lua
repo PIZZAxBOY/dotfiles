@@ -1,4 +1,7 @@
-vim.keymap.set("n", "-", "<CMD>lua MiniFiles.open(nil)<CR>", { desc = "Open parent directory in MiniFiles" })
+-- vim.keymap.set("n", "-", "<CMD>lua MiniFiles.open(nil)<CR>", { desc = "Open parent directory in MiniFiles" })
+
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open cwd in oil" })
+
 vim.keymap.set("n", "gl", function() vim.diagnostic.open_float() end, { desc = "Open diagnostics in float" })
 
 -- 格式化当前文档

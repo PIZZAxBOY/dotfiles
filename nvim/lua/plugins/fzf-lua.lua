@@ -1,7 +1,8 @@
 return {
   "ibhagwan/fzf-lua",
   -- optional for icon support
-  dependencies = { "nvim-tree/nvim-web-devicons" },
+  -- dependencies = { "nvim-tree/nvim-web-devicons" },
+  dependencies = { "echasnovski/mini.icons" },
   -- or if using mini.icons/mini.nvim
   -- tag = "0.7",
   opts = {},
