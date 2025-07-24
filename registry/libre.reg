@@ -1,0 +1,57 @@
+Windows Registry Editor Version 5.00
+
+; Change the Path to your LibreWolf.exe or other firefox fork
+; If you use a different fork replace all "LibreWolf" isntances with your fork name, as well as the LibreWolf-Portable.exe
+;
+; If you want to pin portable librewolf to your taskbar you have to modify the profiles.ini
+; profiles.ini is located in %appdata%\librewolf\profiles.ini
+; change in profile0: Path=<path/to/librewolf>\Profiles\Default
+; restart librewolf and select the profile
+; if it didnt work, reopen the profiles.ini and repeat (worked for me after the second try)
+; Make sure to pin librewolf.exe (inside the LibreWolf folder), instead of LibreWolf-Portable.exe
+; Now when you open Librewolf in the taskbar it should not open a new instance :)
+; Check if it worked:
+;   in about:support, the Profile folder should be pointing to your Portable folder
+
+[HKEY_CURRENT_USER\SOFTWARE\RegisteredApplications]
+"LibreWolf"="Software\\Clients\\StartMenuInternet\\LibreWolf\\Capabilities"
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\LibreWolf\shell\open\command]
+""="\"d:\\scoop\\apps\\librewolf\\current\\LibreWolf-Portable.exe\""
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\LibreWolf\DefaultIcon]
+""="d:\\scoop\\apps\\librewolf\\current\\LibreWolf-Portable.exe,0"
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\LibreWolf\Capabilities\FileAssociations]
+".html"="LibreWolf"
+".htm"="LibreWolf"
+".shtml"="LibreWolf"
+".xht"="LibreWolf"
+".xhtml"="LibreWolf"
+".svg"="LibreWolf"
+".webp"="LibreWolf"
+".avif"="LibreWolf"
+".pdf"="LibreWolf"
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\LibreWolf\Capabilities\URLAssociations]
+"https"="LibreWolf"
+"http"="LibreWolf"
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\LibreWolf\Capabilities]
+"ApplicationName"="LibreWolf"
+"ApplicationIcon"="d:\\scoop\\apps\\librewolf\\current\\LibreWolf-Portable.exe,0"
+"ApplicationDescription"="LibreWolf"
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\LibreWolf]
+""="LibreWolf"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\LibreWolf\shell\open\command]
+""="\"d:\\scoop\\apps\\librewolf\\current\\LibreWolf-Portable.exe\" \"%1\""
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\LibreWolf\Application]
+"ApplicationDescription"="LibreWolf Browser."
+"ApplicationName"="LibreWolf"
+"ApplicationIcon"="d:\\scoop\\apps\\librewolf\\current\\LibreWolf-Portable.exe,0"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\LibreWolf]
+""="LibreWolf HTML Document"
