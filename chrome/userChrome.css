@@ -1,0 +1,17 @@
+/* 标签页样式调整 */
+:root {
+  --tab-border-radius: 8px !important;
+}
+
+.tabbrowser-tab {
+  margin: 0 2px !important;
+}
+
+/* 隐藏界面元素 */
+.titlebar-buttonbox-container,
+.titlebar-spacer,
+#alltabs-button,
+#tabs-newtab-button,
+.tab-close-button {
+  display: none !important;
+}
