@@ -1,12 +1,14 @@
-/* 标签页样式调整 */
 :root {
   --tab-border-radius: 8px !important;
 }
 
-.tabbrowser-tab {
-  margin: 0 2px !important;
+.tabbrowser-tab:first-child {
+  margin: 0 0 0 2px !important;
 }
 
+.tabbrowser-tab:last-of-type {
+  margin: 0 2px 0 0 !important;
+}
 /* 隐藏界面元素 */
 .titlebar-buttonbox-container,
 .titlebar-spacer,
