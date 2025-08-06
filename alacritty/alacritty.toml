@@ -1,0 +1,15 @@
+[general]
+import = ["D:/dotfiles/alacritty/gruvbox_dark.toml"]
+
+[font]
+normal = { family = "CaskaydiaCove Nerd Font", style = "Regular" }
+size = 11.5
+
+[terminal]
+shell = "nu"
+
+[window]
+opacity = 0.8
+
+[cursor]
+style = { shape = "Block", blinking = "On" }
