@@ -215,6 +215,7 @@ return {
       vtsls = {},
       cssls = {},
       html = {},
+      powershell_es = {},
       --
 
       lua_ls = {

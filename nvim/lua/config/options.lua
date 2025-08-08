@@ -1,6 +1,5 @@
 vim.opt.breakindent = true -- 控制长行换行的缩进逻辑
-
-vim.opt.winborder = "rounded"
+vim.opt.shell = "nu"
 
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 2 -- 使用 >> 或 > 时候缩进的距离

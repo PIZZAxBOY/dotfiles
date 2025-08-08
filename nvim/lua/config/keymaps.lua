@@ -18,3 +18,6 @@ vim.keymap.set(
 
 -- 添加换行快捷键
 vim.keymap.set("n", "<leader>tw", "<CMD>set wrap!<CR>", { desc = "Toggle wrap" })
+
+-- 重新映射 digraph
+vim.keymap.set("i", "<C-g>", "<C-k>", { noremap = true })

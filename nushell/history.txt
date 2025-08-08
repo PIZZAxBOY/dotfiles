@@ -1,0 +1,876 @@
+ls
+ls -h
+ls -f
+cls
+c
+cd d:\notes\
+ls
+lsd
+ls
+cd
+cd ~\.config\
+ls
+cd
+cd AppData\Roaming\alacritty\
+nvim
+nvim alacritty.toml
+exit
+cal 
+ls
+cls
+opencode
+fzf
+nvim AppData\Local\nvim-data\lazy\nvim-lspconfig\lsp\nushell.lua
+man ls
+ls --help
+rm help
+rm --help
+:q
+ps
+kill --help
+1+2
+echo $((1+2))
+echo $(1+2)
+echo -h
+calc.exe 1+2
+echo 1+2
+math -h
+math 1+2
+date
+date now
+date to-timezone Asia/dubai
+date now  to-timezone Asia/dubai
+date now  | date to-timezone asia/dubai
+date now  | date to-timezone la
+date now  | date to-timezone america/la
+date now  | date to-timezone america/los-angeles
+date now  | date to-timezone America/Los-Angeles
+date now  | date to-timezone America/New-york
+date now  | date to-timezone America/New-York
+date -h
+date list-timezone 
+date now | date to-timezone America/Los_Angeles
+cd Downloads\
+cd 
+cd d:\scoop
+lsd
+ls
+cd apps
+cd ..
+cd persist\
+ls
+cd ~\AppData\Roaming\nushell\
+ls
+nvim config.nu
+scoop update
+cd d:\dotfiles\
+lazygit
+cls
+cd
+ls
+cd d:\scoop\apps\
+ls
+cd mpd\
+ls
+cd ..
+scoop clearnup *
+scoop cleanup *
+cls
+echo $nu.data-dir
+echo $nu
+mkdir ($nu.data-dir | path join "vendor/autoload")
+cd $nu.data-dir
+sl
+ls
+cd vender
+cd vendor\
+ls
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+cd autoload\
+ls
+nvim starship.nu
+source starship.nu
+ls
+nvim starship.nu
+exit
+ls
+cd AppData\Roaming\nushell\vendor\autoload\starship.nu
+nvim AppData\Roaming\nushell\vendor\autoload\starship.nu
+echo $nu
+exit
+echo $env
+cls
+echo $env.config
+$env.config.buffer_editor = "nvim"
+yazi
+echo $EDITOR%
+config.nu
+config nu
+nvim $env
+nvim $env.config
+exit
+config nu
+$env.config.buffer_editor = "nvim"
+config nu
+config nu --doc | nu-hightlight | less -R
+config nu --doc | nu-highlight | less -R
+config nu --doc | nu-highlight 
+cd d:\Documents\
+ls
+cd company-file\
+ls
+tw 8月月度总结.xlsx
+ii 8月月度总结.xlsx
+open 8月月度总结.xlsx
+explore 8月月度总结.xlsx
+explorer .
+open 8月月度总结.xlsx
+cd
+cd d:\Pictures\
+ls
+open `PJM6003 PJM6004 PJM6009 864x1080.jpg`
+openfiles -h
+openfiles.exe gamescon.jpg
+openfiles gamescon.jpg
+cls
+OpenWith.exe gamescon.jpg
+start gamescon.jpg
+cls
+s gamescon.jpg
+start gamescon.jpg
+start .
+cd
+cls
+yazi
+cd Pictures
+ls
+yazi
+cd
+ls Documents
+start .
+start Documents\company-file\8月月度总结.xlsx
+cls
+exit
+cls
+nvim $profile
+nvim Documents/note
+date "08/06/2025 07:49:27" 
+date 08/06/2025 07:49:27
+date -h
+date humanize 
+date humanize now
+date
+date '08/06/2025 07:49:27'
+date now
+date from-human --help
+date from-human -l
+date humanize -h
+"08/06/2025 07:49:27" | date humanize 
+date to-timezone -h 
+"08/06/2025 07:49:27" -h
+"08/06/2025 07:49:27 UTC" | date to-timezone
+"08/06/2025 07:49:27 UTC" | date to-timezone aisa/shanghai
+"08/06/2025 07:49:27 UTC" | date to-timezone asia/shanghai
+date to-timezone -h 
+help seach timezone
+help Search tz
+help search tz
+help date
+date time
+help time
+date
+date today
+date Searches\
+cls
+date today
+date from-human -h
+date from-human 
+date from-human "today"
+"today" | date humanize 
+"tomorrow" | date humanize 
+"tomorrow" | date humanize
+"tomorrow" | date from-human 
+cal
+cls
+exit
+opencode
+cls
+exit
+cd d:\email-template\
+lazygit
+node send
+curl "v2d.wttr.in/shenzhen"
+curl -h
+nvim d:\notes
+cls
+cd
+ls
+nvim
+nvim 
+exit
+cal
+cal -h
+cal --as-table -h
+cal --as-table
+cal --full-year 
+cal --full-year 2025
+cls
+cal
+news
+nvim d:\Documents\
+nvim
+cls
+$nu.config-path
+config nu
+nvim $nu.config-path
+source $nu.config-path
+config nu
+source $nu.config-path
+news
+opencode
+news bili
+exit
+cls
+news
+exit
+reboot
+start reboot
+run-external reboot
+ls
+cal
+cls
+opencode
+exit
+opencode
+cd Documents
+cd company-file\Assets\
+magick logo.svg logo.png
+lsd
+ls
+start logo.png
+cls
+exit
+nvim
+cls
+config nu
+nvim Documents/PowerShell/Microsoft.PowerShell_profile.ps1
+opencode
+config nu
+source $nu.config-path
+form
+config nu
+source $nu.config-path
+form
+cla
+news
+config nu
+source $nu.config-path
+wttr shenzhen
+config nu
+source $nu.config-path
+wttr shenzhen
+exit
+mv Downloads\The-Approaching-Storm.jpg d:\dotfiles\wallpapers\
+ls
+cd Downloads\
+ls
+rm *.csv
+ls
+cd d:\dotfiles\
+ls
+lazygit
+cls
+form
+cls
+nvim
+config nu
+lazygit
+cd alacritty\
+ls
+cd ~\AppData\Roaming\alacritty\
+ls
+nvim alacritty.toml
+cd d:\dotfiles\
+lazygit
+cls
+curl 4.ipcheck.ing/geo
+opencode
+config nu
+source $nu.config-path
+curl 4.ipcheck.ing/geo
+curl 4.ipcheck.ing
+news
+exit
+scrcpy -S
+cls
+exit
+opencode
+cls
+cd ~\AppData\Roaming\alacritty\
+cd ..
+cp -rf alacritty\ d:\dotfiles\
+cd d:\dotfiles\
+lsd
+ls
+cd alacritty\
+ls
+cd ..
+lazygit
+cls
+opencode
+cd
+opencode
+exit
+nvim
+cd
+cd AppData\Roaming\alacritty\
+nvim alacritty.toml
+clear
+config nu
+source $nu.config-path
+wttr shenzhen
+$env.http_proxy
+exit
+$nu
+cd AppData\Roaming\nushell\
+rm -r vendor\
+exit
+cd d:\dotfiles
+lazygit
+cd d:\
+cd
+ls Documents
+fd
+fd type -d
+fd type -h
+fd -h
+cls
+fd -h
+fd -t d
+fd -t d | fzf
+ls
+fd -h
+fd -t dl
+fd -t d l
+fd -t l
+ls Documents
+fzf
+wttr shenzhen
+news
+scoop install main/s
+s puppies
+s -p duckduckgo puppies
+scoop uninstall s
+scoop install main/lynx
+lynx
+lynx -dump "https://www.google.com/search?q=lunux"
+lynx -dump "https://www.baicu.com/search?q=lunux"
+lynx -dump "https://www.baidu.com/search?q=lunux"
+scoop uninstall lynx
+cls
+scoop update mihomo-party 
+more.com 
+$in
+komorebic stop --whkd
+btm
+nvim d:\email-template\
+cd d:\email-template\
+lazygit
+komorebic start --whkd
+exit
+nvim
+clear
+cd
+cd Downloads\
+nvim Downloads\
+ls d:\email-template\
+mkdir d:\email-template\quick-text
+cp Downloads\*json d:\email-template\quick-text\
+ls d:\email-template\quick-text\
+rm -I -r d:\email-template\*xml
+ls ,.
+ls .,
+cd d:\email-template\
+ls
+nvim templates.json
+cls
+exit
+nvim
+cls
+nvim ~\Downloads\
+nvim d:\email-template\
+nvim 
+ls
+cd quick-text\
+ls
+nvim templates.json
+nvim script.json
+nvim scripts.json
+cles
+cls
+rm script.js
+cp -r ~\AppData\Local\nvim d:\dotfiles\
+cd d:\dotfiles\
+ls
+cd nvim
+ls
+cd lua
+ls
+cd config
+ls
+cd ..
+nvim
+cla
+cal
+exit
+cls
+"tomorrow, August 8 (Fri) at 9:30 a.m. (JST/UTC+9)" | date humanize 
+"tomorrow, August 8 (Fri) at 9:30 a.m. (JST/UTC+9)" | date to-timezone asia/shanghai
+"tomorrow, August 8 (Fri) at 9:30 a.m. (JST/UTC+9)" | date to-timezone asia\shanghai
+"tomorrow 9:30  UTC+9" | date to-timezone asia\shanghai
+"tomorrow 9:30 UTC+9" | date to-timezone asia\shanghai
+"tomorrow 9:30 +0900" | date to-timezone asia\shanghai
+"tomorrow +0900" | date to-timezone asia\shanghai
+"9:30 +0900" | date to-timezone asia\shanghai
+date list-timezone 
+"9:30 +0900" | date to-timezone Asia\Shanghai
+"9:30 +0900" | date to-timezone Asia/Shanghai
+"tomorrow 9:30 +0900" | date to-timezone Asia/Shanghai
+date today
+"tomorrow 9:30 +0900" | date from-human 
+"tomorrow 9:30 +0900" | date from-human | date to-timezone Asia/Shanghai
+"tomorrow, August 8 (Fri) at 9:30 a.m. (JST/UTC+9)" | date from-human 
+"tomorrow, August 8 (Fri) at 9:30 a.m. (JST/UTC+9)" | date from-human | date to-timezone Asia/Shanghai
+"August 8 (Fri) at 9:30 a.m. (JST/UTC+9)" | date from-human | date to-timezone Asia/Shanghai
+"August 8 (Fri) at 9:30 a.m UTC+9" | date from-human | date to-timezone Asia/Shanghai
+"August 8 Fri at 9:30 a.m UTC+9" | date from-human | date to-timezone Asia/Shanghai
+"August 8 at 9:30 a.m UTC+9" | date from-human | date to-timezone Asia/Shanghai
+"August 8 9:30 UTC+9" | date from-human | date to-timezone Asia/Shanghai
+" 9:30 UTC+9" | date from-human | date to-timezone Asia/Shanghai
+" 9:30 UTC+9 tomorrow" | date from-human | date to-timezone Asia/Shanghai
+" tomorrow 9:30 UTC+9 " | date from-human | date to-timezone Asia/Shanghai
+"tomorrow 9:30 UTC+9 " | date from-human | date to-timezone Asia/Shanghai
+cls
+"tomorrow" | date from-human 
+"tomorrow 9:00 jst" | date from-human 
+"tomorrow 9:00 JST" | date from-human 
+"tomorrow 9:00 UTC" | date from-human 
+"tomorrow 9:00 +0900" | date from-human 
+date from-human -h
+date from-human -l
+date humanize -l
+date humanize -h
+'2025-08-08 09:30:00 JST' | date to-timezone Asia/Shanghai
+'2025-08-08 09:30:00 +0900' | date to-timezone Asia/Shanghai
+date to-timezone 
+date to-timezone -h
+'2025-08-08 09:30:00 +0900' | date to-timezone local
+date from-human -l
+cls
+scrcpy -S
+exit
+cd AppData\Roaming\Mozilla\
+ls
+cd ..
+cd local
+ls
+cd -
+cd Roaming\
+cd Mozilla\
+ls
+cd Firefox\
+ls
+cd ..
+cd Extensions\
+ls
+cd
+nvim ..
+nvim ..\..
+nvim AppData\Roaming\Thunderbird\Profiles
+cd AppData\Roaming\Thunderbird\
+cd Profiles\
+ls
+rm -r -i qopwyaiy.default-default\, s2sc2tca.default-release\
+ls
+rm qopwyaiy.default-default\
+rm -r qopwyaiy.default-default\
+rm -r s2sc2tca.default-release\
+ls
+cls
+nvim
+cd
+scoop update
+opencode
+scoop update *
+cls
+exit
+scoop update *
+cd d:\
+scoop update *
+pwsh
+scoop update "*"
+scoop update opencode
+exot
+exit
+$env.http_proxy
+scoop update opencode
+opencode
+$env.http_proxy
+cls
+opencode
+scoop update opencode
+opencode
+cls
+scoop update *
+scoop update "*"
+exit
+curl 4.ipcheck.ing
+curl 4.ipcheck.ing/geo
+mpv "https://www.youtube.com/watch?v=YrxhVA5NVQ4"
+opencode
+cls
+exit
+opencode
+exit
+nvim
+btm
+nvim
+opencode
+cls
+news
+wttr shenzhen
+date
+date now
+clscls
+cls
+nvim
+cls
+nvim
+nvim \
+cles
+cls
+nvim
+rm 1.html
+ls
+cd scripts\
+ls
+news
+cls
+opencode
+nvim
+exit
+scrcpy -S
+exit
+mpv "https://music.youtube.com/watch?v=YUX8fUrKRNU&list=OLAK5uy_muokP2ArFXF_yuj0Qnh_5_QmfFMpwqFj4"
+exit
+cls
+opencode
+cd d:\email-template\
+nvim
+opencode
+exit
+nvim
+lazygit
+ls
+exit
+nvim .config\opencode\
+opencode
+nvim .config\opencode\
+opencode
+nvim .config\opencode\
+opencode
+nvim .config\opencode\
+opencode
+nvim .config\opencode\
+opencode
+nvim .config\opencode\
+opencode auth login
+opencode auth -h
+opencode auth list
+exit
+opencode
+nvim .config\opencode\
+opencode
+cls
+cal
+scoop update opencode
+scoop status
+opencode
+scoop -h
+scoop update *
+scoop update "*"
+cls
+nano
+opencode agent list
+cd .config\opencode\agent\
+ls
+opencode
+nvim influencer-collab-responder.md
+opencode
+cls
+cd d:\email-template\
+lazygit
+ls
+cd quick-text\
+ls
+nvim
+opencode
+:q
+cd
+cd .config\opencode\
+nvim
+opencode
+exit
+opencode
+exit
+scrcpy -S
+scrcpy -S -h
+scrcpy -h | less
+scrcpy -h | more
+exit
+scrcpy -h | nvim
+cls
+opencode
+config nu
+source $nu.config-path
+config nu
+source $nu.config-path
+config nu
+source $nu.config-path
+config nu
+source $nu.config-path
+scrcpy
+config nu
+scrcpy
+source $nu.config-path
+config nu
+source $nu.config-path
+scrcpy
+config nu
+source $nu.config-path
+scrcpy
+config nu
+source $nu.config-path
+config nu
+source $nu.config-path
+scrcpy
+config nu
+config nu 
+source $nu.config-path
+scrcpy
+config nu 
+source $nu.config-path
+scrcpy
+config nu 
+source $nu.config-path
+scrcpy
+config nu 
+source $nu.config-path
+scrcpy
+config nu 
+source $nu.config-path
+scrcpy
+config nu 
+source $nu.config-path
+config nu 
+source $nu.config-path
+scrcpy
+echo $_
+echo($_)
+echo($-)
+echo($$)
+$$
+$in
+echo($in)
+config
+config nu
+source $nu.config-path
+scrcpy
+config nu
+source $nu.config-path
+scrcpy
+config nu
+source $nu.config-path
+scrcpy
+source $nu.config-path
+config nu
+source $nu.config-path
+scrcpy
+config nu
+scrcpy
+source $nu.config-path
+scrcpy
+opencode
+exit
+config nu
+source $nu.config-path
+scrcpy
+config nu
+source $nu.config-path
+scrcpy
+config nu
+source $nu.config-path
+scrcpy
+config nu
+source $nu.config-path
+scrcpy
+config nu
+source $nu.config-path
+config nu
+scrcpy
+config nu
+source $nu.config-path
+scrcpy
+komorebic stop --whkd
+scrcpy
+config nu
+scrcpy
+config nu
+source $nu.config-path
+scrcpy
+komorebic start --whkd
+scrcpy
+nvim komorebi.json
+ls
+fzf
+nvim komorebi.json
+komorebic start --whkd
+nvim applications.json
+komorebic start --whkd
+cls
+scrcpy
+komorebic stop --whkd
+komorebic start --whkd
+nvim komorebi.json
+komorebic start --whkd
+scrcpy
+config nu
+source $nu.config-path
+scrcpy
+config nu
+source $nu.config-path
+scrcpy
+config nu
+source $nu.config-path
+scrcpy
+config nu
+source $nu.config-path
+scrcpy
+config nu
+source $nu.config-path
+scrcpy
+config nu
+adb keyevent 26
+adb shell input keyevent 26
+config nu
+source $nu.config-path
+scrcpy
+^ii .
+^invoke-items .
+ls
+nvim _viminfo
+ls | where type=dir
+ls | where type dir
+ls | get  type= dir
+ls | get type
+cls
+ls | where type dir
+ls | where type -h
+ls | where type == dir
+config nu
+source $nu.config-path
+config
+config nu
+source $nu.config-path
+config nu
+source $nu.config-path
+scrcpy
+config nu
+source $nu.config-path
+scrcpy
+config nu
+echo(hi)
+echo('hi')
+echo 'hi'
+config nu
+source $nu.config-path
+scrcpy
+config nu
+scrcpy
+config nu
+scrcpy
+config nu
+source $nu.config-path
+scrcpy
+config nu
+source $nu.config-path
+scrcpy
+config nu
+source $nu.config-path
+scrcpy
+config nu
+scrcpy
+cls
+config nu
+scrcpy &&     ^adb shell input keyevent 26
+scrcpy; adb shell input keyevent 26
+try{scrcpy}catch{ adb shell input keyevent 26}
+config nu
+source $nu.config-path
+scrcpy;
+scrcpy
+config nu
+source $nu.config-path
+scrcpy
+config nu
+source $nu.config-path
+scrcpy
+opencode
+scoop update opencode
+config nu
+source $nu.config-path
+news
+opencode
+exit
+opencode
+cd $nu.data-dir
+ls
+opencode
+cls
+source $nu.config-path
+config nu
+source $nu.config-path
+exit
+nvim .config\opencode\
+exit
+opencode
+scrcpy
+exit
+opencode.exe 
+cd $nu.data-dir
+opencode
+cd
+nvim .config\opencode\
+nvim .config\opencode\opencode.json
+opencode
+cd $nu.data-dir
+opencode
+source $nu.config-path
+scrcpy
+opencode
+config nu
+source $nu.config-path
+scrcpy
+exit
+mpv "https://www.youtube.com/watch?v=_3QAVgE7Q4c"
+scoop update "*"
+scoop -h
+scoop home
+scoop home opencode
+scoop prefix opencode
+scoop which opencode
+scoop shim -h
+cd d:\email-template\
+ls
+lazygit.exe 
+cls

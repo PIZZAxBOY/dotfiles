@@ -8,6 +8,7 @@ return {
       javascript = { "prettierd" },
       typescript = { "prettierd" },
       html = { "prettierd" },
+      json = { "prettierd" },
     },
     format_on_save = {
       lsp_format = "fallback",
