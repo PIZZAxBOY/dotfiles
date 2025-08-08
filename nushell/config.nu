@@ -58,13 +58,13 @@ def --wrapped scrcpy [...rest] {
         ['--window-width=300', '--window-x=30', '--window-y=350' ]
     }
 
-        try {
-            # 组合参数并执行 scrcpy
-            ^scrcpy ...$maxsize ...$screenOff ...$has_window ...$rest
-        } catch {
-            # scrcpy 退出后锁屏
-            adb shell input keyevent 26
-            echo 结束屏幕共享，开始锁屏
-        }
+    try {
+        # 组合参数并执行 scrcpy
+        ^scrcpy ...$maxsize ...$screenOff ...$has_window ...$rest
+    } catch {
+        # scrcpy 退出后锁屏
+        adb shell input keyevent 26
+        echo 结束屏幕共享，开始锁屏
+    }
 }
 
