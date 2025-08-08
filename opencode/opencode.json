@@ -1,5 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "theme": "gruvbox",
   "provider": {
     "aihub-mix": {
       "npm": "@ai-sdk/openai-compatible",
@@ -7,8 +8,9 @@
         "baseURL": "https://aihubmix.com/v1"
       },
       "models": {
-        "moonshotai/kimi-k2-instruct": {},
-        "gpt-4.1-mini": {}
+        "Kimi-K2": {},
+        "gpt-5": {},
+        "gpt-5-mini": {}
       }
     }
   }
