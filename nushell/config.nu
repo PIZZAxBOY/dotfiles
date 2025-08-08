@@ -67,4 +67,3 @@ def --wrapped scrcpy [...rest] {
         echo 结束屏幕共享，开始锁屏
     }
 }
-
